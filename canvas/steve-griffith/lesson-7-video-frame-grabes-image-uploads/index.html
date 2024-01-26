@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Canvas</title>
+</head>
+<body>
+    <section id="vid">
+        <ol>
+            <li>How to do a frame grab from video on to canvas.</li>
+            <li>How to convert the frame grab to greyscale.</li>
+            <li>How to extract a binary image from the canvas.</li>
+            <li>How to load the binary image into an image element.</li>
+            <li>How to upload the binary image via fetch.</li>
+            <li>How to use the binary image as the poster for a new video element.</li>
+        </ol>
+        <!-- autoplay requires muted attribute in Chrome -->
+        <!--
+        remote = https://github.com/prof3ssorSt3v3/media-sample-files/blob/master/lion-sample.mp4?raw=true
+        local = ./lion-sample.mp4
+        -->
+        <video id="player" muted >
+            <source src="./lion-sample.mp4" type="video/mp4" />
+        </video>
+    </section>
+    <section id="can">
+        <canvas id="canvas"></canvas>
+    </section>
+    <section id="image"></section>
+    
+    <script src="./canvas.js"></script>
+</body>
+
+</html>
